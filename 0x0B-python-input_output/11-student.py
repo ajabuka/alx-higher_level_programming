@@ -22,6 +22,7 @@ class Student:
             try:
                 new_dict[a] = self.__dict__[a]
             except:
+                print("no need")
                 pass
         return new_dict
 
@@ -31,4 +32,5 @@ class Student:
             try:
                 setattr(self, key, json[key])
             except:
+                print("no need")
                 pass
